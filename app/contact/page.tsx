@@ -3,15 +3,15 @@ import styles from "./contact.module.css";
 const socialLinks = [
   {
     name: "Google Scholar",
-    href: "#",
+    href: "https://scholar.google.com/citations?hl=en&user=D91A5yEAAAAJ",
   },
   {
     name: "LinkedIn",
-    href: "#",
+    href: "https://www.linkedin.com/in/ashankarmahadevan/",
   },
   {
     name: "Instagram",
-    href: "#",
+    href: "https://www.instagram.com/astro_shankar/",
   },
 ];
 

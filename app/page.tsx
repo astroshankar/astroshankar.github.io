@@ -131,7 +131,7 @@ export default function Home() {
 
               <p>{area.description}</p>
 
-              <span className="card-arrow">↗</span>
+              <span className="card-arrow"></span>
             </article>
           ))}
         </div>
@@ -162,7 +162,7 @@ export default function Home() {
                 <h3>{work.title}</h3>
               </div>
 
-              <span className="work-arrow">↗</span>
+              <span className="work-arrow"></span>
             </article>
           ))}
         </div>

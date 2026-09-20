@@ -4,9 +4,8 @@ import SiteNav from "@/components/SiteNav";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Shankar Mahadevan | Aerospace Researcher",
-  description:
-    "Shankar Mahadevan is an aerospace researcher working in high-speed aerodynamics, hypersonics, and aeroacoustics.",
+  title: "Shankar Mahadevan",
+  description: "Aerospace Researcher",
 };
 
 export default function RootLayout({
