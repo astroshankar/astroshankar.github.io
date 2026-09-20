@@ -1,0 +1,541 @@
+/* =========================================================
+   RESEARCH OVERVIEW
+   ========================================================= */
+
+.overviewPage {
+  width: 100%;
+  background: #f4f2eb;
+  color: #111;
+
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.hero {
+  width: 100%;
+
+  border-bottom: 1px solid rgba(17, 17, 17, 0.12);
+}
+
+.heroInner {
+  width: min(100% - 8vw, 1400px);
+
+  margin: 0 auto;
+
+  /*
+    100px from the shared header
+  */
+  padding-top: 100px;
+  padding-bottom: 60px;
+}
+
+
+/* =========================================================
+   HERO TITLE
+   ========================================================= */
+
+.heroTitle {
+  margin: 0;
+
+  font-size: clamp(72px, 8vw, 120px);
+
+  line-height: 0.86;
+
+  font-weight: 500;
+
+  letter-spacing: -0.075em;
+}
+
+
+/* =========================================================
+   RESEARCH SECTION
+   ========================================================= */
+
+.researchSection {
+  width: min(100% - 8vw, 1400px);
+
+  margin: 0 auto;
+
+  padding-top: 28px;
+  padding-bottom: 10px;
+}
+
+
+/* =========================================================
+   RESEARCH ITEM
+   ========================================================= */
+
+.researchItem {
+  display: grid;
+
+  /*
+    Keep both sides exactly equal.
+    This guarantees identical image sizes.
+  */
+  grid-template-columns: 1fr 1fr;
+
+  /*
+    No grid gap.
+    The text is positioned closer using
+    the content margins below.
+  */
+  gap: 0;
+
+  align-items: center;
+
+  padding-bottom: 25px;
+
+  margin-bottom: 25px;
+
+  border-bottom: 1px solid rgba(17, 17, 17, 0.11);
+}
+
+
+/* =========================================================
+   ALTERNATING LAYOUT
+   ========================================================= */
+
+.researchItem:not(.reverse) {
+  grid-template-areas:
+    "image content";
+}
+
+.researchItem.reverse {
+  grid-template-areas:
+    "content image";
+}
+
+
+/* =========================================================
+   IMAGE
+   ========================================================= */
+
+.imageWrapper {
+  grid-area: image;
+
+  /*
+    75% of exactly half the container.
+    Every image therefore has identical dimensions.
+  */
+  width: 75%;
+
+  aspect-ratio: 1.45 / 1;
+
+  overflow: hidden;
+
+  background: #dedbd3;
+
+  /*
+    Strong rounded corners.
+  */
+  border-radius: 22px;
+}
+
+.researchImage {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  border-radius: inherit;
+}
+
+
+/* -----------------------------------------
+   Left-side images
+   ----------------------------------------- */
+
+.researchItem:not(.reverse) .imageWrapper {
+  justify-self: start;
+}
+
+
+/* -----------------------------------------
+   Right-side images
+   ----------------------------------------- */
+
+.researchItem.reverse .imageWrapper {
+  justify-self: end;
+}
+
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+.researchContent {
+  grid-area: content;
+
+  width: 100%;
+
+  max-width: 560px;
+}
+
+
+/* -----------------------------------------
+   Pull text toward left-side image
+   ----------------------------------------- */
+
+.researchItem:not(.reverse) .researchContent {
+  margin-left: -8%;
+}
+
+
+/* -----------------------------------------
+   Pull text toward right-side image
+   ----------------------------------------- */
+
+.researchItem.reverse .researchContent {
+  margin-right: -8%;
+}
+
+
+/* =========================================================
+   PROJECT NUMBER
+   ========================================================= */
+
+.researchNumber {
+  display: block;
+
+  margin-bottom: 11px;
+
+  font-size: 9px;
+
+  line-height: 1;
+
+  color: #c46b3e;
+
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   PROJECT TITLE
+   ========================================================= */
+
+.researchTitle {
+  margin: 0;
+
+  /*
+    Slightly compact so long titles remain elegant.
+  */
+  font-size: clamp(25px, 2.25vw, 34px);
+
+  line-height: 1;
+
+  font-weight: 400;
+
+  letter-spacing: -0.055em;
+}
+
+
+/* =========================================================
+   PROJECT DESCRIPTION
+   ========================================================= */
+
+.researchDescription {
+  max-width: 560px;
+
+  margin: 12px 0 0;
+
+  font-size: 12px;
+
+  line-height: 1.48;
+
+  color: #66635d;
+
+  letter-spacing: -0.01em;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  .heroInner {
+    width: min(100% - 9vw, 760px);
+
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+
+
+  .heroTitle {
+    font-size: clamp(64px, 11vw, 100px);
+  }
+
+
+  .researchSection {
+    width: min(100% - 9vw, 760px);
+
+    padding-top: 25px;
+  }
+
+
+  .researchItem {
+    grid-template-columns: 1fr 1fr;
+
+    padding-bottom: 22px;
+
+    margin-bottom: 22px;
+  }
+
+
+  /* Smaller pull toward images */
+
+  .researchItem:not(.reverse) .researchContent {
+    margin-left: -5%;
+  }
+
+  .researchItem.reverse .researchContent {
+    margin-right: -5%;
+  }
+
+
+  .imageWrapper {
+    width: 75%;
+
+    border-radius: 20px;
+  }
+
+
+  .researchContent {
+    max-width: 100%;
+  }
+
+
+  .researchTitle {
+    font-size: 27px;
+  }
+
+
+  .researchDescription {
+    max-width: 100%;
+
+    font-size: 11px;
+
+    line-height: 1.48;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+  .heroInner {
+    width: auto;
+
+    margin: 0;
+
+    padding: 100px 6vw 40px;
+  }
+
+
+  .heroTitle {
+    font-size: clamp(57px, 16vw, 82px);
+
+    line-height: 0.87;
+  }
+
+
+  .researchSection {
+    width: auto;
+
+    margin: 0;
+
+    padding: 24px 6vw 8px;
+  }
+
+
+  /* -----------------------------------------
+     Stack projects vertically
+     ----------------------------------------- */
+
+  .researchItem,
+  .researchItem.reverse {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+
+    align-items: stretch;
+
+    padding-bottom: 24px;
+
+    margin-bottom: 24px;
+  }
+
+
+  /* -----------------------------------------
+     IMAGE
+     ----------------------------------------- */
+
+  .imageWrapper {
+    width: 75%;
+
+    aspect-ratio: 1.35 / 1;
+
+    order: 1;
+
+    border-radius: 18px;
+  }
+
+
+  /*
+    Reset desktop positioning on mobile.
+  */
+
+  .researchItem:not(.reverse) .imageWrapper,
+  .researchItem.reverse .imageWrapper {
+    align-self: flex-start;
+
+    justify-self: auto;
+  }
+
+
+  /* -----------------------------------------
+     CONTENT
+     ----------------------------------------- */
+
+  .researchContent {
+    width: 100%;
+
+    max-width: none;
+
+    order: 2;
+  }
+
+
+  /*
+    Reset desktop negative margins.
+  */
+
+  .researchItem:not(.reverse) .researchContent,
+  .researchItem.reverse .researchContent {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+
+  /* -----------------------------------------
+     NUMBER
+     ----------------------------------------- */
+
+  .researchNumber {
+    margin-bottom: 9px;
+
+    font-size: 8px;
+  }
+
+
+  /* -----------------------------------------
+     TITLE
+     ----------------------------------------- */
+
+  .researchTitle {
+    font-size: 26px;
+
+    line-height: 1;
+  }
+
+
+  /* -----------------------------------------
+     DESCRIPTION
+     ----------------------------------------- */
+
+  .researchDescription {
+    max-width: 100%;
+
+    margin-top: 10px;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+  }
+
+
+  /* -----------------------------------------
+     FLOATING N BUTTON
+     ----------------------------------------- */
+
+  :global(.back-button),
+  :global(.backButton),
+  :global(.floating-back),
+  :global(.floatingBack) {
+    display: none !important;
+  }
+}
+
+
+/* =========================================================
+   SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 430px) {
+
+  .heroInner {
+    padding-top: 100  px;
+
+    padding-bottom: 36px;
+  }
+
+
+  .heroTitle {
+    font-size: 17vw;
+  }
+
+
+  .researchSection {
+    padding-top: 22px;
+  }
+
+
+  .researchItem,
+  .researchItem.reverse {
+    gap: 16px;
+
+    padding-bottom: 22px;
+
+    margin-bottom: 22px;
+  }
+
+
+  .imageWrapper {
+    width: 75%;
+
+    aspect-ratio: 1.3 / 1;
+
+    border-radius: 16px;
+  }
+
+
+  .researchNumber {
+    font-size: 7px;
+  }
+
+
+  .researchTitle {
+    font-size: 24px;
+  }
+
+
+  .researchDescription {
+    margin-top: 9px;
+
+    font-size: 10px;
+
+    line-height: 1.5;
+  }
+}

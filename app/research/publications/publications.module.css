@@ -1,0 +1,501 @@
+/* =========================================================
+   PUBLICATIONS PAGE
+   ========================================================= */
+
+.publicationsPage {
+  width: 100%;
+  background: #f4f2eb;
+  color: #111;
+
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.hero {
+  width: 100%;
+
+  border-bottom: 1px solid rgba(17, 17, 17, 0.12);
+}
+
+.heroInner {
+  width: min(100% - 8vw, 1400px);
+  margin: 0 auto;
+
+  padding-top: 100px;
+  padding-bottom: 52px;
+}
+
+.heroTitle {
+  margin: 0;
+
+  font-size: clamp(82px, 9vw, 145px);
+  line-height: 0.88;
+
+  font-weight: 500;
+  letter-spacing: -0.075em;
+}
+
+.heroDescription {
+  max-width: 650px;
+
+  margin: 28px 0 0;
+
+  font-size: 18px;
+  line-height: 1.42;
+
+  font-weight: 400;
+  letter-spacing: -0.02em;
+
+  color: #66635d;
+}
+
+
+/* =========================================================
+   PUBLICATION LIST
+   ========================================================= */
+
+.publicationsSection {
+  width: min(100% - 8vw, 1400px);
+  margin: 0 auto;
+
+  padding-top: 48px;
+  padding-bottom: 16px;
+}
+
+.publicationsList {
+  width: 100%;
+}
+
+
+/* =========================================================
+   INDIVIDUAL PUBLICATION
+   ========================================================= */
+
+.publication {
+  display: grid;
+
+  grid-template-columns: 140px minmax(0, 1fr);
+
+  gap: 30px;
+
+  padding: 27px 0 29px;
+
+  border-top: 1px solid rgba(17, 17, 17, 0.13);
+}
+
+.publication:last-child {
+  border-bottom: 1px solid rgba(17, 17, 17, 0.13);
+}
+
+
+/* =========================================================
+   LEFT METADATA
+   ========================================================= */
+
+.publicationMeta {
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+
+  padding-top: 2px;
+}
+
+.publicationNumber {
+  font-size: 9px;
+  line-height: 1;
+
+  color: #c46b3e;
+
+  font-weight: 500;
+}
+
+.publicationYear {
+  font-size: 11px;
+  line-height: 1.2;
+
+  color: #77736d;
+
+  font-weight: 400;
+}
+
+.publicationType {
+  max-width: 125px;
+
+  margin-top: 6px;
+
+  font-size: 8px;
+  line-height: 1.35;
+
+  letter-spacing: 0.13em;
+
+  color: #c46b3e;
+
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+.publicationContent {
+  max-width: 900px;
+}
+
+
+/* =========================================================
+   PAPER TITLE
+   ========================================================= */
+
+.publicationTitle {
+  margin: 0;
+
+  /*
+    Smaller and more compact than before.
+  */
+  font-size: clamp(21px, 1.75vw, 27px);
+
+  line-height: 1.12;
+
+  font-weight: 400;
+
+  letter-spacing: -0.04em;
+}
+
+
+/* =========================================================
+   AUTHORS
+   ========================================================= */
+
+.publicationAuthors {
+  margin: 9px 0 0;
+
+  font-size: 11px;
+  line-height: 1.4;
+
+  color: #55524d;
+
+  letter-spacing: -0.01em;
+}
+
+
+/* =========================================================
+   VENUE
+   ========================================================= */
+
+.publicationVenue {
+  margin: 4px 0 0;
+
+  font-size: 10px;
+  line-height: 1.4;
+
+  color: #77736d;
+}
+
+
+/* =========================================================
+   DOI
+   ========================================================= */
+
+.doi {
+  display: inline-block;
+
+  margin-top: 10px;
+
+  font-size: 9px;
+  line-height: 1;
+
+  color: #111;
+
+  text-decoration: none;
+
+  border-bottom: 1px solid rgba(17, 17, 17, 0.4);
+
+  padding-bottom: 3px;
+
+  transition:
+    opacity 160ms ease,
+    border-color 160ms ease;
+}
+
+.doi:hover {
+  opacity: 0.55;
+
+  border-color: rgba(17, 17, 17, 0.2);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  .heroInner {
+    width: min(100% - 9vw, 760px);
+
+    padding-top: 100x;
+    padding-bottom: 46px;
+  }
+
+  .heroTitle {
+    font-size: clamp(76px, 12vw, 110px);
+  }
+
+  .heroDescription {
+    max-width: 620px;
+
+    margin-top: 23px;
+
+    font-size: 17px;
+  }
+
+
+  .publicationsSection {
+    width: min(100% - 9vw, 760px);
+
+    padding-top: 42px;
+    padding-bottom: 14px;
+  }
+
+
+  .publication {
+    grid-template-columns: 105px minmax(0, 1fr);
+
+    gap: 25px;
+
+    padding: 24px 0 27px;
+  }
+
+
+  .publicationType {
+    max-width: 95px;
+
+    font-size: 7px;
+  }
+
+
+  .publicationTitle {
+    font-size: 23px;
+  }
+
+  .publicationAuthors {
+    font-size: 10px;
+  }
+
+  .publicationVenue {
+    font-size: 9px;
+  }
+
+  .doi {
+    font-size: 8px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+  .heroInner {
+    width: auto;
+    margin: 0;
+
+    padding: 100px 6vw 38px;
+  }
+
+  .heroTitle {
+    font-size: clamp(64px, 18vw, 94px);
+
+    line-height: 0.87;
+    letter-spacing: -0.075em;
+  }
+
+  .heroDescription {
+    max-width: 100%;
+
+    margin-top: 20px;
+
+    font-size: 16px;
+    line-height: 1.43;
+  }
+
+
+  /* -----------------------------------------
+     PUBLICATIONS
+     ----------------------------------------- */
+
+  .publicationsSection {
+    width: auto;
+    margin: 0;
+
+    padding: 34px 6vw 10px;
+  }
+
+
+  .publication {
+    display: block;
+
+    padding: 23px 0 26px;
+  }
+
+
+  /* -----------------------------------------
+     META
+     ----------------------------------------- */
+
+  .publicationMeta {
+    display: flex;
+    flex-direction: row;
+
+    align-items: baseline;
+
+    gap: 10px;
+
+    padding: 0;
+
+    margin-bottom: 11px;
+  }
+
+  .publicationNumber {
+    font-size: 8px;
+  }
+
+  .publicationYear {
+    font-size: 10px;
+  }
+
+  .publicationType {
+    max-width: none;
+
+    margin: 0 0 0 auto;
+
+    font-size: 7px;
+
+    text-align: right;
+  }
+
+
+  /* -----------------------------------------
+     TITLE
+     ----------------------------------------- */
+
+  .publicationTitle {
+    font-size: 19px;
+
+    line-height: 1.12;
+
+    letter-spacing: -0.035em;
+  }
+
+
+  .publicationAuthors {
+    margin-top: 8px;
+
+    font-size: 10px;
+    line-height: 1.4;
+  }
+
+
+  .publicationVenue {
+    margin-top: 4px;
+
+    font-size: 9px;
+    line-height: 1.4;
+  }
+
+
+  .doi {
+    margin-top: 9px;
+
+    font-size: 8px;
+  }
+
+
+  /* Hide floating N button */
+
+  :global(.back-button),
+  :global(.backButton),
+  :global(.floating-back),
+  :global(.floatingBack) {
+    display: none !important;
+  }
+}
+
+
+/* =========================================================
+   SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 430px) {
+
+  .heroInner {
+    padding-top: 100px;
+    padding-bottom: 34px;
+  }
+
+  .heroTitle {
+    font-size: 18vw;
+  }
+
+  .heroDescription {
+    margin-top: 18px;
+
+    font-size: 15px;
+  }
+
+
+  .publicationsSection {
+    padding-top: 30px;
+  }
+
+
+  .publication {
+    padding: 21px 0 24px;
+  }
+
+
+  .publicationMeta {
+    margin-bottom: 10px;
+
+    gap: 8px;
+  }
+
+  .publicationNumber {
+    font-size: 7px;
+  }
+
+  .publicationYear {
+    font-size: 9px;
+  }
+
+  .publicationType {
+    font-size: 6.5px;
+
+    letter-spacing: 0.1em;
+  }
+
+
+  .publicationTitle {
+    font-size: 18px;
+  }
+
+  .publicationAuthors {
+    font-size: 9px;
+  }
+
+  .publicationVenue {
+    font-size: 8px;
+  }
+
+  .doi {
+    font-size: 7.5px;
+  }
+}
