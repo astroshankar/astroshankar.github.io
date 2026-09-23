@@ -70,7 +70,7 @@ export default function About() {
 
           <div className={styles.researchImage}>
             <img
-              src="/images/about1.png"
+              src="/images/about1.jpeg"
               alt="Shankar Mahadevan presenting his research"
             />
           </div>
@@ -201,7 +201,7 @@ export default function About() {
 
           <div className={styles.beyondImage}>
             <img
-              src="/images/about2.png"
+              src="/images/about2.jpeg"
               alt="Shankar Mahadevan outdoors"
             />
           </div>

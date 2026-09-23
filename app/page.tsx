@@ -65,7 +65,7 @@ export default function Home() {
           <div className="visual-grid" />
 
           <img
-            src="/images/shankar.png"
+            src="/images/shankar.jpeg"
             alt="Shankar Mahadevan"
             className="hero-photo"
           />

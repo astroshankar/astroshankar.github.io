@@ -4,7 +4,7 @@ import styles from "./astrophotography.module.css";
 
 const astroPhotos = [
   {
-    image: "/images/astro/astro1.png",
+    image: "/images/astro/astro1.jpeg",
     title: "The Orion Nebula and Running Man Nebula",
     date: "",
     location: "",
@@ -13,7 +13,7 @@ const astroPhotos = [
     orientation: "landscape",
   },
   {
-    image: "/images/astro/astro2.png",
+    image: "/images/astro/astro2.jpeg",
     title: "The Pleiades Star Cluster",
     date: "",
     location: "",
@@ -22,7 +22,7 @@ const astroPhotos = [
     orientation: "landscape",
   },
   {
-    image: "/images/astro/astro3.png",
+    image: "/images/astro/astro3.jpeg",
     title: "Our Sun",
     date: "",
     location: "",
@@ -31,7 +31,7 @@ const astroPhotos = [
     orientation: "square",
   },
   {
-    image: "/images/astro/astro4.png",
+    image: "/images/astro/astro4.jpeg",
     title: "Our Moon",
     date: "",
     location: "",
@@ -40,7 +40,7 @@ const astroPhotos = [
     orientation: "square",
   },
   {
-    image: "/images/astro/astro5.png",
+    image: "/images/astro/astro5.jpeg",
     title: "The Rosette Nebula",
     date: "",
     location: "",
@@ -49,7 +49,7 @@ const astroPhotos = [
     orientation: "landscape",
   },
   {
-    image: "/images/astro/astro6.png",
+    image: "/images/astro/astro6.jpeg",
     title: "The Whirlpool Galaxy",
     date: "",
     location: "",
@@ -58,7 +58,7 @@ const astroPhotos = [
     orientation: "landscape",
   },
   {
-    image: "/images/astro/astro7.png",
+    image: "/images/astro/astro7.jpeg",
     title: "The Zodiac Equator - Star Trail",
     date: "",
     location: "",
@@ -67,7 +67,7 @@ const astroPhotos = [
     orientation: "landscape",
   },
   {
-    image: "/images/astro/astro8.png",
+    image: "/images/astro/astro8.jpeg",
     title: "A Night full of Stars",
     date: "",
     location: "",
@@ -76,21 +76,21 @@ const astroPhotos = [
     orientation: "landscape",
   },
   {
-    image: "/images/astro/astro9.png",
+    image: "/images/astro/astro9.jpeg",
     title: "Our Milky Way Galaxy",
     date: "",
     location: "",
     equipment: "",
-    credit: "Shankar Mahadevan | STELLARIA",
+    credit: "Shankar Mahadevan | Naimish Balaji | STELLARIA",
     orientation: "portrait",
   },
   {
-    image: "/images/astro/astro10.png",
+    image: "/images/astro/astro10.jpeg",
     title: "Our Milky Way Galaxy",
     date: "",
     location: "",
     equipment: "",
-    credit: "Shankar Mahadevan | STELLARIA",
+    credit: "Shankar Mahadevan | Naimish Balaji | STELLARIA",
     orientation: "portrait",
   },
 ];
